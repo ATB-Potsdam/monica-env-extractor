@@ -48,5 +48,5 @@ for (var subObject in subObjects) {
     });
     var outFileName= outFile + '_' + subObject + '.json';
     console.log('writing ' + outFileName);
-    fs.writeFileSync(outFileName, JSON.stringify(o));
+    fs.writeFileSync(outFileName, JSON.stringify(o, null, 2));
 }
